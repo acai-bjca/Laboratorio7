@@ -4,13 +4,10 @@ import java.sql.Date;
 import java.util.Calendar;
 import java.util.List;
 
-import org.apache.ibatis.exceptions.PersistenceException;
-
 import com.google.inject.Inject;
 
 import edu.eci.pdsw.sampleprj.dao.ClienteDAO;
 import edu.eci.pdsw.sampleprj.dao.ItemDAO;
-import edu.eci.pdsw.sampleprj.dao.ItemRentadoDAO;
 import edu.eci.pdsw.sampleprj.dao.TipoItemDAO;
 import edu.eci.pdsw.samples.entities.Cliente;
 import edu.eci.pdsw.samples.entities.Item;

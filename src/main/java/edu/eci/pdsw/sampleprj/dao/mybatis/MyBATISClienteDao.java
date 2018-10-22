@@ -19,19 +19,16 @@ public class MyBATISClienteDao implements ClienteDAO {
 	public void save(Cliente cliente) throws PersistenceException {		
 		try{
 			clienteMapper.insertarCliente(cliente);		  
-		}
-		catch(org.apache.ibatis.exceptions.PersistenceException e){
+		}catch(org.apache.ibatis.exceptions.PersistenceException e){
 			throw new PersistenceException("Error al registrar el cliente "+cliente.toString(),e);
-		}       
-
+		}     
 	}
-
+	
 	@Override
 	public Cliente load(int id) throws PersistenceException {
 		try{
 			return clienteMapper.consultarCliente(id);
-		}
-		catch(org.apache.ibatis.exceptions.PersistenceException e){
+		}catch(org.apache.ibatis.exceptions.PersistenceException e){
 			throw new PersistenceException("Error al consultar el cliente "+id,e);
 		}
 	}	
@@ -40,8 +37,7 @@ public class MyBATISClienteDao implements ClienteDAO {
 	public List<Cliente> load() throws PersistenceException {
 		try{
 			return clienteMapper.consultarClientes();
-		}
-		catch(org.apache.ibatis.exceptions.PersistenceException e){
+		}catch(org.apache.ibatis.exceptions.PersistenceException e){
 			throw new PersistenceException("Error al consultar los clientes",e);
 		}
 	}
@@ -50,23 +46,17 @@ public class MyBATISClienteDao implements ClienteDAO {
 	public void saveAlquilerItem(ItemRentado itr, long doc) throws PersistenceException {
 		try{
 			clienteMapper.agregarItemRentadoACliente(doc, itr.getItem().getId(), itr.getFechainiciorenta(), itr.getFechafinrenta());
-		}
-		catch(org.apache.ibatis.exceptions.PersistenceException e){
+		}catch(org.apache.ibatis.exceptions.PersistenceException e){
 			throw new PersistenceException("Error al registar alquiler del cliente "+doc,e);
-		}
-		
+		}		
 	}
 
 	@Override
 	public void saveEstadoCliente(long docu, boolean estado) throws PersistenceException {
 		try{
 			clienteMapper.actualizarEstadoDeCliente(docu, estado);
-		}
-		catch(org.apache.ibatis.exceptions.PersistenceException e){
+		}catch(org.apache.ibatis.exceptions.PersistenceException e){
 			throw new PersistenceException("Error al actualizar el estado del cliente: "+docu,e);
-		}
-		
+		}		
 	}
-	
-	
 }

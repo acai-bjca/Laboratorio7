@@ -26,19 +26,14 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
-import edu.eci.pdsw.sampleprj.dao.ItemDAO;
 import edu.eci.pdsw.sampleprj.dao.mybatis.mappers.ClienteMapper;
 import edu.eci.pdsw.sampleprj.dao.mybatis.mappers.ItemMapper;
 import edu.eci.pdsw.sampleprj.dao.mybatis.mappers.TipoItemMapper;
-import edu.eci.pdsw.samples.entities.Cliente;
-import edu.eci.pdsw.samples.entities.Item;
-import edu.eci.pdsw.samples.entities.ItemRentado;
-import edu.eci.pdsw.samples.entities.TipoItem;
+import edu.eci.pdsw.samples.entities.*;
 import edu.eci.pdsw.samples.services.ExcepcionServiciosAlquiler;
 import edu.eci.pdsw.samples.services.ServiciosAlquiler;
 import edu.eci.pdsw.samples.services.ServiciosAlquilerFactory;
 /**
- *
  * @author hcadavid
  */
 public class MyBatisExample {
@@ -59,8 +54,7 @@ public class MyBatisExample {
             } catch (IOException e) {
                 throw new RuntimeException(e.getCause());
             }
-        }
-        return sqlSessionFactory;
+        }return sqlSessionFactory;
     }
 
     /**

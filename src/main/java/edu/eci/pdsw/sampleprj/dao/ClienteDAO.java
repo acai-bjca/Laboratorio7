@@ -4,7 +4,6 @@ import java.util.List;
 import org.apache.ibatis.exceptions.PersistenceException;
 
 import edu.eci.pdsw.samples.entities.Cliente;
-import edu.eci.pdsw.samples.entities.Item;
 import edu.eci.pdsw.samples.entities.ItemRentado;
 
 /**

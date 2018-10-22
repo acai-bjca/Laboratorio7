@@ -1,18 +1,9 @@
 package edu.eci.pdsw.samples.services;
 
 import com.google.inject.Injector;
-import edu.eci.pdsw.sampleprj.dao.ClienteDAO;
-import edu.eci.pdsw.sampleprj.dao.ItemDAO;
-import edu.eci.pdsw.sampleprj.dao.ItemRentadoDAO;
-import edu.eci.pdsw.sampleprj.dao.TipoItemDAO;
-import edu.eci.pdsw.sampleprj.dao.mybatis.MyBATISClienteDao;
-import edu.eci.pdsw.sampleprj.dao.mybatis.MyBATISItemDao;
-import edu.eci.pdsw.sampleprj.dao.mybatis.MyBATISItemRentadoDao;
-import edu.eci.pdsw.sampleprj.dao.mybatis.MyBATISTipoItemDao;
-import edu.eci.pdsw.samples.entities.ItemRentado;
+import edu.eci.pdsw.sampleprj.dao.*;
+import edu.eci.pdsw.sampleprj.dao.mybatis.*;
 import edu.eci.pdsw.samples.services.impl.*;
-import org.apache.ibatis.transaction.TransactionFactory;
-import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
 import org.mybatis.guice.XMLMyBatisModule;
 
 import java.util.Optional;
