@@ -39,5 +39,8 @@ jobs:
         
       # run tests!
       - run: mvn integration-test
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 10fcd973eb6bd61a5ff159d06ebec9b04c205496
