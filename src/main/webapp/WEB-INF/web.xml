@@ -29,10 +29,10 @@
         </session-timeout>
     </session-config>
 
-    <!--Dirección del archivo de arranque.
+    <!--Dirección del archivo de arranque.-->
     <welcome-file-list>
        <welcome-file>faces/registrocliente.xhtml</welcome-file>
-    </welcome-file-list>-->
+    </welcome-file-list>
     
     <listener>
         <listener-class>edu.eci.pdsw.guice.GuiceContextListener</listener-class>
