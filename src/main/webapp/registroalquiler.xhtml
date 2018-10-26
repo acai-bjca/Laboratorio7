@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Alquiler</title>
+</h:head>
+<h:body>   
+	<h1>Alquiler #{alquilerItemsBean.documento}</h1>	
+	<h:form id="alquilerFormulario">
+		<p:dataTable id="itemsRentados_table" var="itemC" value="#{alquierItemsBean.consultarItemsSinDevolver()}">			
+			<p:column headerText="Id">
+				<h:outputText value="#{itemC.id}" />
+			</p:column>
+			<p:column headerText="Nombre">
+				<h:outputText value="#{itemC.nombre}" />
+			</p:column>
+			<p:column headerText="Descripción">
+				<h:outputText value="#{itemC.descripcion}" />
+			</p:column>
+			<p:column headerText="Tarifa Por Día">
+				<h:outputText value="#{itemC.tarifaxDia}" />
+			</p:column>
+			<!--
+			<p:column headerText="Multa">
+				<h:outputText value="#{alquierItemsBean.consultarMultaAlquiler(itemC.id)}" />
+			</p:column>
+			-->								
+		</p:dataTable>			
+		<br></br>
+		<br></br>
+		<br></br>
+	</h:form>					
+</h:body>
+</html>

@@ -13,7 +13,7 @@ import edu.eci.pdsw.samples.entities.ItemRentado;
  */
 public interface ClienteMapper {
     
-	public Cliente consultarCliente(@Param("idcli") int id); 
+	public Cliente consultarCliente(@Param("idcli") long id); 
     
     /**
      * Registrar un nuevo item rentado asociado al cliente identificado
@@ -37,5 +37,6 @@ public interface ClienteMapper {
     public ItemRentado consultarItemRentado(@Param("idit") int idit);
     public void insertarCliente(@Param("idc") Cliente idc);
 	public void actualizarEstadoDeCliente(@Param("idcli") long docu, @Param("estado")boolean estado);
+	
 
 }

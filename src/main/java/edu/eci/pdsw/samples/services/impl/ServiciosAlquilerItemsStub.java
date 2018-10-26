@@ -39,7 +39,7 @@ public class ServiciosAlquilerItemsStub implements ServiciosAlquiler {
    }
 
    @Override
-   public int valorMultaRetrasoxDia(int itemId) {
+   public long valorMultaRetrasoxDia(int itemId) {
        return MULTA_DIARIA;
    }
 
@@ -154,7 +154,11 @@ public class ServiciosAlquilerItemsStub implements ServiciosAlquiler {
        } else {
            throw new ExcepcionServiciosAlquiler("Cliente no registrado:" + idcliente);
        }
-
+   }
+   
+   @Override
+   public List<Item> consultarItemsClienteSinDevoler(long idcliente) throws ExcepcionServiciosAlquiler{ 
+	   throw new UnsupportedOperationException("Falta implementar."); 
    }
 
    private Cliente consultarClienteConItem(int iditem) throws ExcepcionServiciosAlquiler{

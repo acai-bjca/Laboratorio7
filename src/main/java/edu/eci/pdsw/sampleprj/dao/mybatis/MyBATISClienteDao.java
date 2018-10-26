@@ -25,7 +25,7 @@ public class MyBATISClienteDao implements ClienteDAO {
 	}
 	
 	@Override
-	public Cliente load(int id) throws PersistenceException {
+	public Cliente load(long id) throws PersistenceException {
 		try{
 			return clienteMapper.consultarCliente(id);
 		}catch(org.apache.ibatis.exceptions.PersistenceException e){
@@ -34,13 +34,15 @@ public class MyBATISClienteDao implements ClienteDAO {
 	}	
 
 	@Override
-	public List<Cliente> load() throws PersistenceException {
+	public List<Cliente> loadClientes() throws PersistenceException {
 		try{
 			return clienteMapper.consultarClientes();
 		}catch(org.apache.ibatis.exceptions.PersistenceException e){
 			throw new PersistenceException("Error al consultar los clientes",e);
 		}
 	}
+	
+	
 
 	@Override
 	public void saveAlquilerItem(ItemRentado itr, long doc) throws PersistenceException {

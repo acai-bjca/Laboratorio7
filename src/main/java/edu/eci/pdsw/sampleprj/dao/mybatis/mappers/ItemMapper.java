@@ -25,5 +25,7 @@ public interface ItemMapper {
     public long consultarMultaAlquiler(@Param("iditem") int iditem, @Param("fechaDevolucion")Date fechaDevolucion);
     
     public void actualizarTarifaItem(@Param("iditem") int iditem, @Param("tarifa")long tarifa);
+    
+    public List<Item> consultarItemsRentadosClientes(@Param("idcli") long docu);
      
 }

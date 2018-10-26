@@ -11,7 +11,8 @@
 <h:body>   
 	<h1>Clientes</h1>	
 	<h:form id="clientesFormulario">
-		<p:dataTable id="cliente_table" var="cliente" value="#{alquierItemsBean.getClientes()}">
+		<p:dataTable id="cliente_table" var="cliente" value="#{alquierItemsBean.getClientes()}" rowKey="#{cliente.documento}">
+			<p:column selectionMode="single" style="width:16px;text-align:center"/>					
 			<p:column headerText="Nombre">
 				<h:outputText value="#{cliente.nombre}" />
 			</p:column>
@@ -29,8 +30,9 @@
 			</p:column>
 			<p:column headerText="Vetado">
 				<h:outputText value="#{cliente.vetado}" />
-			</p:column>
-		</p:dataTable>		
+			</p:column>									
+		</p:dataTable>
+		<p:commandButton  outcome="registroalquiler" value="Seleccionar" actionListenner="alquierItemsBean.setSelectedCliente(cliente)"/>	
 		<br></br>
 		<br></br>
 		<br></br>
@@ -46,7 +48,7 @@
 			<p:inputText id="direccionRegistro" binding="#{direccionRegistro}"/><br/><br/>
 			<h:outputText value="Email:			" />
 			<p:inputText id="emailRegistro" binding="#{emailRegistro}"/><br/><br/>		
-			<p:commandButton value="Registrar" update="clientesFormulario" actionListener="#{alquierItemsBean.registrarCliente(nombreRegistro.value, documentoRegistro.value, telefonoRegistro.value, direccionRegistro.value, emailRegistro.value)}" />   
+			<p:commandButton value="Registrar" update="clientesFormulario" actionListener="#{alquierItemsBean.registrarCliente(nombreRegistro.value, documentoRegistro.value, telefonoRegistro.value, direccionRegistro.value, emailRegistro.value)}"/>   
 		</p:panel>	
 	</h:form>					
 </h:body>

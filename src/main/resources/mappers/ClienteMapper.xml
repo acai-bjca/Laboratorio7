@@ -37,36 +37,34 @@
         
     <select parameterType="map" id="consultarCliente" resultMap="ClienteResult">
 		select    
-		c.nombre as cliente_nombre,
-		c.documento as cliente_documento,
-		c.telefono as cliente_telefono,
-		c.direccion as cliente_direccion,
-		c.email as cliente_email,
-		c.vetado as cliente_vetado,
+			c.nombre as cliente_nombre,
+			c.documento as cliente_documento,
+			c.telefono as cliente_telefono,
+			c.direccion as cliente_direccion,
+			c.email as cliente_email,
+			c.vetado as cliente_vetado,
 		
-		ir.id as item_rentado_id,
-		ir.fechainiciorenta as item_rentado_fechainiciorenta,
-		ir.fechafinrenta as item_rentado_fechafinrenta,
+			ir.id as item_rentado_id,
+			ir.fechainiciorenta as item_rentado_fechainiciorenta,
+			ir.fechafinrenta as item_rentado_fechafinrenta,
 		
-		i.id as item_id,
-		i.nombre as item_nombre,
-		i.descripcion as item_descripcion,
-		i.fechalanzamiento as item_fechalanzamiento,
-		i.tarifaxdia as item_tarifaxdia,
-		i.formatorenta as item_formatorenta,
-		i.genero as item_genero,        
-		ti.id as tipo_item_id,
-		ti.descripcion as tipo_item_descripcion
-
-		
+			i.id as item_id,
+			i.nombre as item_nombre,
+			i.descripcion as item_descripcion,
+			i.fechalanzamiento as item_fechalanzamiento,
+			i.tarifaxdia as item_tarifaxdia,
+			i.formatorenta as item_formatorenta,
+			i.genero as item_genero,        
+			ti.id as tipo_item_id,
+			ti.descripcion as tipo_item_descripcion
 		FROM VI_CLIENTES as c 
 		left join VI_ITEMRENTADO as ir on c.documento=ir.CLIENTES_documento 
 		left join VI_ITEMS as i on ir.ITEMS_id=i.id 
 		left join VI_TIPOITEM as ti on i.TIPOITEM_id=ti.id
         
         WHERE c.documento=#{idcli}
-	</select>    
-    
+	</select>  
+	 
     <insert parameterType="map" id="agregarItemRentadoACliente">
 		insert into VI_ITEMRENTADO (CLIENTES_documento, ITEMS_id, fechainiciorenta, fechafinrenta)
         values (#{idcli},#{idit},#{fechai},#{fechaf})

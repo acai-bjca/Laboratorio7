@@ -1,25 +1,26 @@
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/samples/services/impl/ServiciosAlquilerImpl.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/sampleprj/dao/ItemRentadoDAO.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/view/AlquilerItemsBean.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/sampleprj/dao/ClienteDAO.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/samples/services/client/MyBatisExample.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/sampleprj/dao/TipoItemDAO.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/guice/GuiceContextListener.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/mappers/ItemMapper.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/mappers/ItemRentadoMapper.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/samples/services/ServiciosAlquilerFactory.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/MyBATISClienteDao.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/MyBATISItemDao.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/samples/entities/Cliente.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/samples/entities/ItemRentado.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/view/BasePageBean.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/samples/services/impl/ServiciosAlquilerItemsStub.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/sampleprj/dao/ItemDAO.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/mappers/ClienteMapper.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/MyBATISItemRentadoDao.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/MyBATISTipoItemDao.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/samples/services/ServiciosAlquiler.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/samples/entities/Item.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/samples/entities/TipoItem.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/samples/services/ExcepcionServiciosAlquiler.java
-/home/amalia/Descargas/Laboratorio7/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/mappers/TipoItemMapper.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/samples/entities/Cliente.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/sampleprj/dao/ItemDAO.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/samples/services/ExcepcionServiciosAlquiler.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/MyBATISItemDao.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/view/PrimefacesEjbIdDataModel.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/samples/services/impl/ServiciosAlquilerImpl.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/sampleprj/dao/ItemRentadoDAO.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/view/AlquilerItemsBean.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/sampleprj/dao/ClienteDAO.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/samples/services/ServiciosAlquiler.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/samples/services/client/MyBatisExample.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/mappers/ItemMapper.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/view/BasePageBean.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/samples/entities/TipoItem.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/samples/services/ServiciosAlquilerFactory.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/guice/GuiceContextListener.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/mappers/ClienteMapper.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/MyBATISTipoItemDao.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/mappers/ItemRentadoMapper.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/MyBATISClienteDao.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/mappers/TipoItemMapper.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/samples/entities/Item.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/sampleprj/dao/mybatis/MyBATISItemRentadoDao.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/sampleprj/dao/TipoItemDAO.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/samples/entities/ItemRentado.java
+/home/amalia/Descargas/Lab 7 - V3/MyBatis_Introduction_VideoRental/src/main/java/edu/eci/pdsw/samples/services/impl/ServiciosAlquilerItemsStub.java

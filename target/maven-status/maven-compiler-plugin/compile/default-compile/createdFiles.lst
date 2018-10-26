@@ -13,6 +13,7 @@ edu/eci/pdsw/sampleprj/dao/mybatis/MyBATISItemRentadoDao.class
 edu/eci/pdsw/sampleprj/dao/ClienteDAO.class
 edu/eci/pdsw/samples/entities/ItemRentado.class
 edu/eci/pdsw/sampleprj/dao/mybatis/MyBATISTipoItemDao.class
+edu/eci/pdsw/view/PrimefacesEjbIdDataModel.class
 edu/eci/pdsw/samples/entities/Item.class
 edu/eci/pdsw/view/AlquilerItemsBean.class
 edu/eci/pdsw/samples/services/ServiciosAlquilerFactory$1.class

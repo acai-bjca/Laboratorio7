@@ -53,6 +53,25 @@
 		WHERE ir.ITEMS_id = i.id AND i.id = #{iditem}
     </select>  
     
+    <select parameterType="map" id="consultarItemsRentadosClientes" resultMap="ItemResult">
+		select    		
+			i.id as item_id,
+			i.nombre as item_nombre,
+			i.descripcion as item_descripcion,
+			i.fechalanzamiento as item_fechalanzamiento,
+			i.tarifaxdia as item_tarifaxdia,
+			i.formatorenta as item_formatorenta,
+			i.genero as item_genero,        
+			ti.id as tipo_item_id,
+			ti.descripcion as tipo_item_descripcion		
+		FROM VI_CLIENTES as c 
+		left join VI_ITEMRENTADO as ir on c.documento=ir.CLIENTES_documento 
+		left join VI_ITEMS as i on ir.ITEMS_id=i.id 
+		left join VI_TIPOITEM as ti on i.TIPOITEM_id=ti.id        
+        WHERE c.documento=#{idcli}
+	</select>   
+    
+    
     <update parameterType="map" id="actualizarTarifaItem">         
     	UPDATE VI_ITEMS
 		SET tarifaxdia=#{tarifa}
