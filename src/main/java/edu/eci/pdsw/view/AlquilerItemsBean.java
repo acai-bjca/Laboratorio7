@@ -29,6 +29,9 @@ public class AlquilerItemsBean extends BasePageBean {
 	@Inject
 	private ServiciosAlquiler serviciosAlquiler;
 	
+	//@ManagedProperty(value = "#{param.cliente}")
+	//private Cliente cliente;
+	
 	private Cliente selectedCliente; 
 	private long documento;
 	
@@ -57,6 +60,11 @@ public class AlquilerItemsBean extends BasePageBean {
         this.selectedCliente = selectedCliente;
     }
 	
+	public Cliente getSelectedCliente() {
+		System.out.println("cliente con id. "+selectedCliente.getDocumento());
+        return this.selectedCliente;
+    }
+	
 	public List<Item> consultarItemsSinDevolver() throws Exception{
 		/**
 		 * aqui puedo usar directamente el metodo de la calse Cliente (getRentados) ? o tengo que hacer el proceso?
@@ -78,9 +86,5 @@ public class AlquilerItemsBean extends BasePageBean {
 		} catch (ExcepcionServiciosAlquiler e) {			
 			throw e;
 		}       		
-    }  
-	
-	public void setDocCliente(ActionEvent event) {
-        this.documento = (long) event.getComponent().getAttributes().get("parameter");
-    }
+    }  	
 }
